@@ -4,8 +4,8 @@ pragma solidity ^0.8.4;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract BenBKIsERC20 is ERC20, Ownable {
-    constructor() ERC20("Ben BK Token", "BBKTK") {
+contract NexiIsERC20 is ERC20, Ownable {
+    constructor() ERC20("Next Immo Token", "NEXI") {
         _mint(msg.sender, 1000000);
     }
 

@@ -30,9 +30,9 @@
     "typescript": ">=4.5.0"
   },
   "scripts": {
-    "coverage": "yarn hardhat coverage",
-    "testLocalhost": "yarn hardhat test --network localhost",
-    "deployLocalhost": "yarn hardhat run scripts/deploy.ts --network localhost",
-    "deployGoerli": "yarn hardhat run scripts/deploy.ts --network goerli"
+    "coverage": "npx hardhat coverage",
+    "testLocalhost": "npx hardhat test --network localhost",
+    "deployLocalhost": "npx hardhat run scripts/deploy.ts --network localhost",
+    "deployGoerli": "npx hardhat run scripts/deploy.ts --network goerli"
   }
 }

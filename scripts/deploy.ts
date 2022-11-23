@@ -2,17 +2,17 @@ import { ethers, network } from "hardhat";
 import { verify } from "../utils/verify";
 
 async function main() {
-  const BenBKToken = await ethers.getContractFactory("BenBKIsERC20");
-  const benBKToken = await BenBKToken.deploy();
+  const NexiToken = await ethers.getContractFactory("NexiIsERC20");
+  const nexiToken = await NexiToken.deploy();
 
-  await benBKToken.deployed();
+  await nexiToken.deployed();
 
-  console.log(`Deployed smart contract at address ${benBKToken.address}`)
+  console.log(`Deployed smart contract at address ${nexiToken.address}`)
 
   if(network.name === "goerli") {
     console.log("Verifying the smart contract ...");
-    await benBKToken.deployTransaction.wait(6)
-    await verify(benBKToken.address, []);
+    await nexiToken.deployTransaction.wait(6)
+    await verify(nexiToken.address, []);
   }
 }
 

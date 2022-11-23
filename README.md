@@ -2,22 +2,25 @@
 
 ## Scripts
 
+This project was created with `npx hardhat`.
+We can launch a local blockchain with `npx hardhat node`.
+
 ```
-yarn coverage
+npx coverage
 ```
 Get the test coverage of your smart contract. Here we have 100%.
 
 ```
-yarn testLocalhost
+npx testLocalhost
 ```
 Test the smart contract on hardhat network
 
 ```
-yarn deployLocalhost
+npx deployLocalhost
 ```
 Deploy the smart contract on hardhat network
 
 ```
-yarn deployGoerli
+npx deployGoerli
 ```
 Deploy the smart contract on goerli network

@@ -2,17 +2,17 @@ import { time, loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { anyValue } from "@nomicfoundation/hardhat-chai-matchers/withArgs";
 import { expect, assert } from "chai";
 import { ethers } from "hardhat";
-import { BenBKIsERC20 } from "../typechain-types/contracts/BenBKIsERC20.sol/BenBKIsERC20";
+import { NexiIsERC20 } from "../typechain-types/contracts/NexiIsERC20";
 
-describe("BenBKIsERC20", function () {
+describe("NexiIsERC20", function () {
 
-  let token: BenBKIsERC20;
+  let token: NexiIsERC20;
 
   before(async function() {
     [this.owner, this.addr1, this.addr2, this.addr3, ...this.addrs] = await ethers.getSigners();
     //const [owner, otherAccount] = await ethers.getSigners();
-    const BenBKIsERC20 = await ethers.getContractFactory("BenBKIsERC20");
-    token = await BenBKIsERC20.deploy();
+    const NexiIsERC20 = await ethers.getContractFactory("NexiIsERC20");
+    token = await NexiIsERC20.deploy();
   })
 
   describe("Deployment verifications", function () {
