@@ -3,7 +3,7 @@
 ## Scripts
 
 This project was created with `npx hardhat`.
-We can launch a local blockchain with `npx hardhat node`.
+After install dependencies, you can launch a local blockchain with `npx hardhat node`, deploy smartcontract on local blockchain with `npx hardhat run scripts/deploy.ts --network localhost`, test it `npx hardhat test --network localhost`. Then and deploy on Goerli ETH Blockchain `npx hardhat run scripts/deploy.ts --network goerli`.
 
 ```
 npx coverage
